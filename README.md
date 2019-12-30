@@ -15,8 +15,8 @@ npm update @feizheng/react-qrcode
 | property  | type   | default | description |
 | --------- | ------ | ------- | ----------- |
 | className | String | -       | -           |
-| value     | -      | -       | -           |
-| onChange  | -      | -       | -           |
+| value     | String | -       | -           |
+| options   | Object | -       | -           |
 
 ## usage
 1. import css
