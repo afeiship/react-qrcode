@@ -16,7 +16,7 @@ export default merge(baseConfig, {
   }),
   externals: externals.base({
     '@feizheng/noop': '@feizheng/noop',
-    qrcodejs2: 'qrcodejs2'
+    '@keeex/qrcodejs-kx': '@keeex/qrcodejs-kx'
   }),
   plugins: [plugins.clean(), plugins.copyStyles()]
 });
