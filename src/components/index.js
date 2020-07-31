@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import noop from '@feizheng/noop';
 import objectAssign from 'object-assign';
-import QRCode from 'qrcodejs2';
+import QRCode from '@keeex/qrcodejs-kx';
 
 const CLASS_NAME = 'react-qrcode';
 

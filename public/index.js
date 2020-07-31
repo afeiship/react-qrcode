@@ -10,7 +10,12 @@ class App extends React.Component {
 
   changeValue = () => {
     console.log('set new value!');
-    this.setState({ value: 'https://www.mipengine.org/' });
+    // [195, 217]
+    //(BUG:) https://github.com/davidshimjs/qrcodejs
+    var url = 'https://www.baidu.com&redirect=https%3A%2F%2Fwww.baidu.com%2Findex.html%3Fsdflsjfdjslsdlfjlsdjflksjdfkljsdklfjskldjfklsdjfkljsdklfjskldjfklsdjflssldjflsdjflksjdfljsdlfjsdjf%2Blksdjflksdjfklsjdfkljsdlfjlfjslkdfsdlfjsdlfjsdlfjlsdfjsldfjkljldsfj'.slice(0, 197);
+
+    // console.log(url.length);
+    this.setState({ value: url });
   };
 
   render() {
