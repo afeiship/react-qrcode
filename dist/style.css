@@ -1,0 +1,5 @@
+.react-qrcode {
+  color: red;
+  font-size: 12px; }
+  .react-qrcode:active {
+    color: black; }

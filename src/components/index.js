@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
 import objectAssign from 'object-assign';
 import QRCode from '@keeex/qrcodejs-kx';
 
@@ -38,7 +36,7 @@ export default class extends Component {
   }
 
   render() {
-    const { className, options, ...props } = this.props;
+    const { className, value, options, ...props } = this.props;
     return (
       <div
         data-component={CLASS_NAME}

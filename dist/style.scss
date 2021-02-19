@@ -1,4 +1,10 @@
 $react-qrcode-options: () !default;
 
 .react-qrcode {
+  // your styles
+  color: red;
+  font-size: 12px;
+  &:active {
+    color: black;
+  }
 }
