@@ -15,8 +15,8 @@ npm install -S @jswork/react-qrcode
 | Name      | Type   | Required | Default | Description                           |
 | --------- | ------ | -------- | ------- | ------------------------------------- |
 | className | string | false    | -       | The extended className for component. |
-| value     | object | false    | null    | The changed value.                    |
-| onChange  | func   | false    | noop    | The change handler.                   |
+| value     | string | false    | -       | The qr value.                         |
+| options   | object | false    | -       | The `qrcodejs` options.               |
 
 
 ## usage
@@ -39,13 +39,33 @@ npm install -S @jswork/react-qrcode
   import './assets/style.scss';
 
   class App extends React.Component {
+    state = {
+      value: 'https://www.baidu.com'
+    };
+
+    changeValue = () => {
+      console.log('set new value!');
+      // [195, 217]
+      //(BUG:) https://github.com/davidshimjs/qrcodejs
+      var url = 'https://www.baidu.com&redirect=https%3A%2F%2Fwww.baidu.com%2Findex.html%3Fsdflsjfdjslsdlfjlsdjflksjdfkljsdklfjskldjfklsdjfkljsdklfjskldjfklsdjflssldjflsdjflksjdfljsdlfjsdjf%2Blksdjflksdjfklsjdfkljsdlfjlfjslkdfsdlfjsdlfjsdlfjlsdfjsldfjkljldsfj'.slice(
+        0,
+        197
+      );
+
+      // console.log(url.length);
+      this.setState({ value: url });
+    };
+
     render() {
+      const { value } = this.state;
       return (
         <ReactDemokit
           className="p-3 app-container"
           url="https://github.com/afeiship/react-qrcode">
-          <ReactQrcode className="mb-5 has-text-white" />
-          <button className="button is-primary is-fullwidth">Start~</button>
+          <ReactQrcode value={value} />
+          <button className="button is-primary my-2" onClick={this.changeValue}>
+            Regenerate
+          </button>
         </ReactDemokit>
       );
     }

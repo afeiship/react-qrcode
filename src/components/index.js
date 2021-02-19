@@ -6,11 +6,20 @@ import QRCode from '@keeex/qrcodejs-kx';
 
 const CLASS_NAME = 'react-qrcode';
 
-export default class extends Component {
+export default class ReactQrcode extends Component {
   static displayName = CLASS_NAME;
   static propTypes = {
+    /**
+     * The extended className for component.
+     */
     className: PropTypes.string,
+    /**
+     * The qr value.
+     */
     value: PropTypes.string,
+    /**
+     * The `qrcodejs` options.
+     */
     options: PropTypes.object
   };
 

@@ -20,17 +20,10 @@
     "url": "git+https://github.com/afeiship/react-qrcode.git"
   },
   "keywords": [
-    "boilerplate",
     "react",
-    "component",
-    "cra",
-    "template",
-    "webpack",
-    "sass",
-    "scss",
-    "docs",
-    "service-worker",
-    "sw"
+    "qrcode",
+    "code",
+    "qr"
   ],
   "author": "afei",
   "license": "MIT",
