@@ -78,6 +78,8 @@ npm install -S @jswork/react-qrcode
 ## documentation
 - https://afeiship.github.io/react-qrcode/
 
+## resources
+- https://www.npmjs.com/package/qrcodejs2
 
 ## license
 Code released under [the MIT license](https://github.com/afeiship/react-qrcode/blob/master/LICENSE.txt).
