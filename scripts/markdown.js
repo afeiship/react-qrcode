@@ -19,7 +19,7 @@ nx.declare({
 
       nx.replaceInFile('README.md', [
         ['__GENERATE_DAPP__', indentString(docApp, 2).trimEnd()],
-        ['@jswork/react-qrcode/src', '@jswork/react-qrcode'],
+        ['@jswork/react-qrcode/src/main', '@jswork/react-qrcode'],
         ['src/style.scss', 'dist/style.scss'],
       ]);
     },

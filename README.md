@@ -21,7 +21,7 @@ npm install -S @jswork/react-qrcode
   ```
 2. import js
   ```js
-  import ReactQRCode from '@jswork/react-qrcode/main';
+  import ReactQRCode from '@jswork/react-qrcode';
   import '@jswork/react-qrcode/dist/style.scss';
 
   function App() {
