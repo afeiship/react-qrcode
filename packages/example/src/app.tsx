@@ -7,7 +7,9 @@ function App() {
       <div className="badge badge-warning absolute right-0 top-0 m-4">
         Build Time: {BUILD_TIME}
       </div>
-      <ReactQRCode value="Hello, World!" options={{ colorDark: 'black' }} />
+      <div className="text-center">
+        <ReactQRCode value="Hello, World!" options={{ colorDark: 'black', width: 200, height: 200 }} className="inline-block" />
+      </div>
     </div>
   );
 }
